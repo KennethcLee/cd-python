@@ -13,6 +13,8 @@ class BankAccount:
     def withdraw(self, amount):
         if (BankAccount.can_withdraw(self.balance, amount)):
             self.balance -= amount
+        else:
+            self.balance -= 5
         return self
 
     def display_account_info(self):
@@ -49,7 +51,7 @@ class BankAccount:
         if(balance >= amount):
             return True
         else:
-            print("insufficent fund")
+            print("Insufficient funds: Charging a $5 fee")
             return False
 
 peter = BankAccount(0.02, 100)
