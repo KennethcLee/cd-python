@@ -4,7 +4,6 @@ class SLink():
 
     def add_to_front(self, val):
         newnode=SNode(val)
-        current_node=self.head
         newnode.next= self.head
         self.head=newnode
         return self
@@ -93,7 +92,6 @@ class SNode():
     def __init__(self, val):
         self.value=val
         self.next=None
-
 
 newlink=SLink()
 newlink.printValue()
