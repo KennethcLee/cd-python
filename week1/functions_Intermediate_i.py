@@ -35,6 +35,11 @@ def iterateDictionary(x):
         print(f"first_name - {x[j]['first_name']}, last_name - {x[j]['last_name']}")
 iterateDictionary(students)
 
+def iterateDictionary(x):
+    for j in x:
+        print(f"first_name - {x['first_name']}, last_name - {x['last_name']}")
+iterateDictionary(students)
+
 # should output: (it's okay if each key-value pair ends up on 2 separate lines;
 # bonus to get them to appear exactly as below!)
 """
