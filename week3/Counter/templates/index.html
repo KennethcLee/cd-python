@@ -18,7 +18,8 @@
     <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Counter</h1>
-          <p class="lead">{{ session['count'] }}</p>
+          <p class="lead">Count: {{ session['count'] }}</p>
+          <p class="lead">Visit: {{ session['visit'] }}</p>
           <!-- <form action='/', methods='post'>
             <button class="btn btn-primary my-2">Click</button>
           </form>
@@ -26,7 +27,13 @@
             <button class="btn btn-primary my-2">Reset</button>
           </form> -->
           <a href='/'><button class="btn btn-primary my-2">Click</button></a> 
+          <a href='/addtwo'><button class="btn btn-primary my-2">+2</button></a> 
           <a href='/reset'><button class="btn btn-primary my-2">Reset</button></a> 
+          <form action='/anynum' method='POST'>
+            <label for='anynum'>Increase by:</label>
+            <input type='text' name='anynum'>
+            <input type='submit' value='Submit'>
+          </form>
         </div>
       </section>
 </body>
