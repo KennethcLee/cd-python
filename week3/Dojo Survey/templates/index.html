@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <section class="jumbotron text-center">
+        <h1 class="display-4 text-secondary">Dojo Survey</h1>
+        <div class="container border border-primary">
+            <form action='/process' method='POST'>
+                <div class="form-group row py-1 justify-content-md-center">
+                    <label for="name" class="col col-lg-2 col-form-label">Your name:</label>
+                    <div class="col col-lg-4">
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                </div>
+                <div class="form-group row py-1 justify-content-md-center">
+                    <label for="location" class="col col-lg-2 col-form-label">Dojo Location:</label>
+                    <div class="col col-lg-4">
+                        <select type="text" class="form-control" name="location">
+                            <option>Boise, ID</option>
+                            <option>Los Angeles, CA</option>
+                            <option>Silicon Valley, CA</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row py-1 justify-content-md-center">
+                    <label for="language" class="col col-lg-2 col-form-label">Favorite Language:</label>
+                    <div class="col col-lg-4">
+                        <select type="text" class="form-control" name="language">
+                            <option>CSS</option>
+                            <option>HTML</option>
+                            <option>Java</option>
+                            <option>Python</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row py-1 justify-content-md-center">
+                    <label for="comment" class="col col-lg-3 col-form-label">Comment (Optional):</label>
+                    <textarea class="form-control col col-lg-4" rows="3" name="comment"></textarea>
+                </div>
+                <div class="form-group row py-1 justify-content-md-center">
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="inlineCheckbox">Language Learned:</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="CSS" name="learned">
+                        <label class="form-check-label" for="inlineCheckbox1">CSS</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="HTML" name="learned">
+                        <label class="form-check-label" for="inlineCheckbox2">HTML</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="Java" name="learned">
+                        <label class="form-check-label" for="inlineCheckbox3">Java</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="Python" name="learned">
+                        <label class="form-check-label" for="inlineCheckbox3">Python</label>
+                    </div>
+                </div>
+                <div class="form-group row py-1 justify-content-md-center">
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="inlineCheckbox2">Year graduated:</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" value="2021" name="graduated">
+                        <label class="form-check-label" for="inlineRadio1">2021</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" value="2022" name="graduated">
+                        <label class="form-check-label" for="inlineRadio2">2022</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" value="Not yet" name="graduated">
+                        <label class="form-check-label" for="inlineRadio3">Not yet</label>
+                    </div>
+                </div>
+                <p><button class="btn btn-primary my-2 justify-content-md-right">Submit</button></p>
+            </form>
+            <form action='/clear' method='POST'>
+                <button class="btn btn-primary my-2">Clear</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -26,7 +26,7 @@
             <div>
                 <h3 class="h4 text-muted">Guess {{ session['count'] }} time(s)</h3>
             </div>
-            {% if (session['count'] >= 5): %}
+            {% if (session['count'] >= 30): %}
                 <div class="m-5 py-5 border border-primary bg-danger">
                     <h1>You Lose</h1>
                 </div>
@@ -51,7 +51,7 @@
                 </div>
             {% endif %}
         {% endif %}
-        {% if (session['count'] < 5 and session['value'] != session['guess']): %}
+        {% if (session['count'] < 30 and session['value'] != session['guess']): %}
             <form action='/guess' method='POST'>
                 <p><input type="text" name="guess"></p>
                 <p><button class="btn btn-primary my-2">Guess</button></p>

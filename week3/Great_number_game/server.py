@@ -16,6 +16,8 @@ def game():
 
 @app.route('/guess', methods=['GET', 'POST'])
 def guess():
+    # if request.method=='POST':
+    #     pass
     if request.form['guess']:
         session['guess']=(int(request.form['guess']))
         print(session['guess'])
@@ -55,7 +57,7 @@ def leaderboard():
 def resetleader():
     if 'leader' in session:
         session.pop('leader')
-    return render_template('/leader.html')
+    return redirect('/leaderboard')
 
 if __name__=="__main__":
     app.run(debug=True, port=8094)
