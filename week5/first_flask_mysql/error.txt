@@ -1,0 +1,118 @@
+import pymysql.curso
+import pymysql.cursors
+127.0.0.1 - - [29/Aug/2021 07:33:15] "GET / HTTP/1.1" 200 -
+ * Detected change in '/Users/klee/codingdojo/cd-python/week5/first_flask_mysql/mysqlconnection.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/klee/codingdojo/cd-python/week5/first_flask_mysql/server.py", line 3, in <module>
+    from friend import Friend
+  File "/Users/klee/codingdojo/cd-python/week5/first_flask_mysql/friend.py", line 2, in <module>
+    from mysqlconnection import connectToMySQL
+  File "/Users/klee/codingdojo/cd-python/week5/first_flask_mysql/mysqlconnection.py", line 2, in <module>
+    import pymysql.cursor
+ModuleNotFoundError: No module named 'pymysql.cursor'
+
+
+class MySQLConn:
+class MySQLConnection:
+NameError
+NameError: name 'MySQLConnection' is not defined
+
+connection = pymy.connect(host = 'localhost',
+connection = pymysql.connect(host = 'localhost',
+NameError
+NameError: name 'pymy' is not defined
+
+connection = pymysql.connect(host = 'localho',
+connection = pymysql.connect(host = 'localhost',
+pymysql.err.OperationalError
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localho' ([Errno 8] nodename nor servname provided, or not known)")
+
+password = '$tes', 
+password = 'Correct Password',      
+pymysql.err.OperationalError
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+db = d,
+db = db,
+NameError
+NameError: name 'd' is not defined
+
+charset = 'utf',
+charset = 'utf8mb4',
+AttributeError
+AttributeError: 'NoneType' object has no attribute 'encoding'
+
+cursorclass = pymy.cursors.DictCursor,
+cursorclass = pymysql.cursors.DictCursor,
+NameError
+NameError: name 'pymy' is not defined
+
+cursorclass = pymysql.curso.DictCursor,
+cursorclass = pymysql.cursors.DictCursor,
+AttributeError
+AttributeError: module 'pymysql' has no attribute 'curso'
+
+cursorclass = pymysql.cursors.DictCr,
+cursorclass = pymysql.cursors.DictCursor,
+AttributeError
+AttributeError: module 'pymysql.cursors' has no attribute 'DictCr'
+
+
+autocommit = Tr)
+autocommit = True)
+NameError
+NameError: name 'Tr' is not defined
+
+autocommit = True
+autocommit = True)
+127.0.0.1 - - [29/Aug/2021 07:58:21] "GET / HTTP/1.1" 200 -
+ * Detected change in '/Users/klee/codingdojo/cd-python/week5/first_flask_mysql/mysqlconnection.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/klee/codingdojo/cd-python/week5/first_flask_mysql/server.py", line 3, in <module>
+    from friend import Friend
+  File "/Users/klee/codingdojo/cd-python/week5/first_flask_mysql/friend.py", line 2, in <module>
+    from mysqlconnection import connectToMySQL
+  File "/Users/klee/codingdojo/cd-python/week5/first_flask_mysql/mysqlconnection.py", line 15
+    self.connection = connection
+    ^
+SyntaxError: invalid syntax
+
+self.connection = connect
+self.connection = connection
+NameError
+NameError: name 'connect' is not defined
+
+def query_db(self, que, data=None):
+def query_db(self, query, data=None):
+TypeError
+TypeError: 'bool' object is not iterable
+
+def query_db(self, query, data=e):
+def query_db(self, query, data=None):
+Traceback (most recent call last):
+  File "/Users/klee/codingdojo/cd-python/week5/first_flask_mysql/server.py", line 3, in <module>
+    from friend import Friend
+  File "/Users/klee/codingdojo/cd-python/week5/first_flask_mysql/friend.py", line 2, in <module>
+    from mysqlconnection import connectToMySQL
+  File "/Users/klee/codingdojo/cd-python/week5/first_flask_mysql/mysqlconnection.py", line 4, in <module>
+    class MySQLConnection:
+  File "/Users/klee/codingdojo/cd-python/week5/first_flask_mysql/mysqlconnection.py", line 17, in MySQLConnection
+    def query_db(self, query, data=e):
+NameError: name 'e' is not defined
+
+self.connect.close() 
+self.connection.close() 
+AttributeError
+AttributeError: 'MySQLConnection' object has no attribute 'connect'
+
+def connectToMySQL():
+def connectToMySQL(db):
+TypeError
+TypeError: connectToMySQL() takes 0 positional arguments but 1 was given
+
+return MySQLConnection()
+return MySQLConnection(db)
+TypeError
+TypeError: __init__() missing 1 required positional argument: 'db'
