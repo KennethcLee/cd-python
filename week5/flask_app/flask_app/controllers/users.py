@@ -63,7 +63,7 @@ def edit(id):
 def delete(id):
     print('***  9  ***')
     data = {
-        'id': id,
+        'id': id
     }
     Users.delete(data)
     print('***  9A  ***', data)

@@ -12,7 +12,7 @@ class Dojos:
     def get_all(cls):
         query = "SELECT * FROM dojos ORDER BY name;"
         results = connectToMySQL('dojos_and_ninjas').query_db(query)
-        # print('*** 100 ***', results, results[0]['id'])
+        print('*** 100 ***', results, results[0]['id'])
         return results
 
     @classmethod

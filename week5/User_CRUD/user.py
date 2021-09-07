@@ -23,7 +23,7 @@ class Users:
         query = "SELECT * FROM users;"
         results = connectToMySQL('user_ca').query_db(query)
         users = []
-        print('***  13A  ***', users)
+        print('***  13A  ***', results, results[0]['id'])
         for j in results:
             users.append( cls(j) )
         print('***  13B  ***', users[0].last_name)
